@@ -23,7 +23,7 @@ public class MainActivity extends BaseActivity implements ItemListener {
     UserViewModel reposViewModel;
     RecyclerView repoRv;
     LinearLayoutManager linearLayoutManager;
-    RepoAdapter repoAdapter;
+    UsersAdapter usersAdapter;
     ItemListener itemListener;
 ProgressBar loading;
     @Override
@@ -44,7 +44,7 @@ ProgressBar loading;
                     if (reposetoryData.size() > 0) {
                         loading.setVisibility(View.GONE);
                         repoRv.setVisibility(View.VISIBLE);
-                        repoAdapter.notifyList(reposetoryData);
+                        usersAdapter.notifyList(reposetoryData);
                     }
                 }
             }
@@ -69,8 +69,8 @@ ProgressBar loading;
     }
 
     public void setRvAdapter() {
-        repoAdapter = new RepoAdapter(reposViewModel.data.getValue(), this);
-        repoRv.setAdapter(repoAdapter);
+        usersAdapter = new UsersAdapter(reposViewModel.data.getValue(), this);
+        repoRv.setAdapter(usersAdapter);
     }
 
     @Override

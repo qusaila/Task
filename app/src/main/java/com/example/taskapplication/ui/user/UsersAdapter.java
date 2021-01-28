@@ -13,11 +13,11 @@ import com.example.taskapplication.listener.ItemListener;
 
 import java.util.ArrayList;
 
-public class RepoAdapter extends RecyclerView.Adapter<RepoAdapter.RepoViewHolder> {
+public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.RepoViewHolder> {
     ArrayList<User> data;
     ItemListener itemListener;
 
-    public RepoAdapter(ArrayList<User> data, ItemListener itemListener) {
+    public UsersAdapter(ArrayList<User> data, ItemListener itemListener) {
         this.data = data;
         this.itemListener = itemListener;
     }
