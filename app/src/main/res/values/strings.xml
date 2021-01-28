@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaskApplication</string>
+    <string name="no_internet">"Internet connection is required. Please check your connection and try again."</string>
+<string name="watchers">Watchers:</string>
+    <string name="forks">ForksCount:</string>
+    <string name="name">name:</string>
+    <string name="general_msg">Failed Connect To Server</string>
+</resources>
